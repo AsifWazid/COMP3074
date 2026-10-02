@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF4FF">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="App Logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp" />
+
+    <!-- Counter -->
+    <TextView
+        android:id="@+id/textViewCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- Subtract -->
+    <Button
+        android:id="@+id/buttonSubtract"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="-"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"
+        app:layout_constraintTop_toBottomOf="@id/textViewCounter"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="55dp" />
+
+    <!-- Add -->
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="+"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"
+        app:layout_constraintTop_toBottomOf="@id/textViewCounter"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="55dp" />
+
+    <!-- Reset -->
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Reset"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E91E63"
+        app:layout_constraintTop_toBottomOf="@id/buttonSubtract"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="45dp" />
+
+    <!-- Step -->
+    <Button
+        android:id="@+id/buttonStep"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Step"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00C853"
+        app:layout_constraintTop_toBottomOf="@id/buttonAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="45dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
